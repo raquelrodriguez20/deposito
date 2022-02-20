@@ -1,5 +1,11 @@
 package cuentas;
 
+/**
+ * Esta clase simula los movimientos de una cuenta bancaria.
+ * 
+ * @author raquel
+ */
+
 public class CCuenta {
 
 
@@ -12,6 +18,13 @@ public class CCuenta {
     {
     }
 
+/**
+ * @param nom
+ * @param cue
+ * @param sal
+ * @param tipo
+ */
+    
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         setNombre(nom);
@@ -19,11 +32,19 @@ public class CCuenta {
         setSaldo(sal);
     }
 
+/**
+ * 
+ * @return Saldo actual
+ */
     public double estado()
     {
         return getSaldo();
     }
-
+/**
+ * 
+ * @param cantidad
+ * @throws Exception
+ */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -43,7 +64,11 @@ public class CCuenta {
 	private String getNombre() {
 		return nombre;
 	}
-
+	
+/**
+ * 
+ * @param nombre
+ */
 	private void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -52,6 +77,10 @@ public class CCuenta {
 		return cuenta;
 	}
 
+/**
+ * 	
+ * @param cuenta
+ */
 	private void setCuenta(String cuenta) {
 		this.cuenta = cuenta;
 	}
@@ -60,6 +89,10 @@ public class CCuenta {
 		return saldo;
 	}
 
+/**
+ * 
+ * @param saldo
+ */
 	private void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
@@ -68,6 +101,10 @@ public class CCuenta {
 		return tipoInteres;
 	}
 
+/**
+ * 
+ * @param tipoInteres
+ */
 	private void setTipoInteres(double tipoInteres) {
 		this.tipoInteres = tipoInteres;
 	}
